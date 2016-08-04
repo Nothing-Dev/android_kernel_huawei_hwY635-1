@@ -53,28 +53,6 @@ ifdef CONFIG_MSM_SUBSYSTEM_RESTART
        obj-y += subsystem_restart.o
        obj-y += ramdump.o
 endif
-<<<<<<< HEAD
+
 obj-$(CONFIG_MSM_SYSMON_COMM) += sysmon.o
-=======
-obj-$(CONFIG_MSM_SYSMON_COMM) += sysmon.o sysmon-qmi.o
-obj-$(CONFIG_CP_ACCESS64) += cpaccess64.o
-obj-$(CONFIG_MSM_CPU_PWR_CTL) += cpu_pwr_ctl.o
-obj-$(CONFIG_MSM8994_V1_PMUIRQ_WA) += cti-pmu-irq.o
-obj-$(CONFIG_MSM_XPU_ERR_FATAL) += scm-xpu.o
-
-ifdef CONFIG_MSM_RTB
-	obj-y += msm_rtb-hotplug.o
-endif
-
-obj-$(CONFIG_MSM_SHARED_HEAP_ACCESS) += shared_memory.o
-obj-$(CONFIG_MSM_SYSTEM_HEALTH_MONITOR) += system_health_monitor_v01.o
-obj-$(CONFIG_MSM_SYSTEM_HEALTH_MONITOR) += system_health_monitor.o
-obj-$(CONFIG_MSM_RTB) += msm_rtb-hotplug.o
-obj-$(CONFIG_QCOM_EARLY_RANDOM)	+= early_random.o
-obj-$(CONFIG_MSM_PACMAN)        += msm_pacman.o
-obj-$(CONFIG_BOOTINFO)		+= bootinfo.o
-obj-$(CONFIG_MMI_SOC_INFO) += mmi_soc_info.o
-obj-$(CONFIG_MMI_RAM_INFO) += mmi-ram-info.o
-obj-$(CONFIG_MMI_UNIT_INFO) += mmi-unit-info.o
 obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o
->>>>>>> 96cc2aa... usb: add usb fast charge
